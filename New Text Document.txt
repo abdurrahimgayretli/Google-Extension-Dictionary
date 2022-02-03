@@ -1,0 +1,21 @@
+	chrome.storage.sync.get('words',function(budget){
+			
+		tdic = $('#tdic').val();	
+		edic = $('#edic').val();
+		word = [tdic,edic];
+
+		chrome.storage.sync.set({'words': word});
+					
+		$('#words').text(word);
+		if(time == 1){
+			var notifOptions = {
+				type: 'basic',
+				iconUrl: 'x2.png',
+				title: 'Dictionary',
+				message: word[0] + ' = ' + word[1]
+			};
+			chrome.notifications.create('notif', notifOptions);
+			time =0;
+		}
+		
+	});

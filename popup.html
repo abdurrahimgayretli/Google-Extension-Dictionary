@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Dictionary</title>
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="popup.js"></script>
+</head>
+<body>
+    <h2 id="greet">Dictionary Alert</h2>
+    <h2>Turkish:</h2>
+    <input type="text" id="tdic" name="tdic"><br>
+    <h2>Engilish:</h2>
+    <input type="text" id="edic" name="edic"><br><br>
+    <input type="submit" id="addDic" value="add" />
+    <h2></h2>
+    <select id="alerttime" name="alerttime">
+        <option value="0.1">1 Minute</option>
+        <option value="5">5 Minute</option>
+        <option value="15">15 Minute</option>
+        <option value="30">30 Minute</option>
+        <option value="60">1 Hour</option>
+        <option value="120">2 Hour</option>
+        <option value="360">6 Hour</option>
+        <option value="720">12 Hour</option>
+        <option value="1440">1 Day</option>
+    </select>
+    <input type="submit" id="selecttime" value="select" />
+    <h2></h2>
+    <select id="addlist" name="addlist"></select>
+    <h2></h2>
+    <input type="submit" id="delword" value="delword" />
+</body>
+</html>
